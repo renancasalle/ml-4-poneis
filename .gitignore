@@ -161,11 +161,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-
-*.csv
 *.db
-*.xlsx
-*.parquet
 fifa.py
 mlruns
 mlartifacts
