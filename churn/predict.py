@@ -1,11 +1,15 @@
 # %%
 
 import pandas as pd
+import mlflow.sklearn
+import mlflow
 
-# import the model
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
+model = mlflow.sklearn.load_model("models:/churn_model/6")
 
-model_df = pd.read_pickle('churn_model.pkl')
-model_df
+features = model.feature_names_in_
+features
+
 # %%
 
 # load some data
